@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2237375C1CD84BA000BA69B2 /* GearRatioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237375B1CD84BA000BA69B2 /* GearRatioViewController.swift */; };
 		229053941CD68410002DEFF0 /* fracchart.csv in Resources */ = {isa = PBXBuildFile; fileRef = 229053931CD68410002DEFF0 /* fracchart.csv */; };
 		229053961CD693F7002DEFF0 /* tapchart.csv in Resources */ = {isa = PBXBuildFile; fileRef = 229053951CD693F7002DEFF0 /* tapchart.csv */; };
 		229053981CD6959B002DEFF0 /* TapHoleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229053971CD6959B002DEFF0 /* TapHoleTableViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2237375B1CD84BA000BA69B2 /* GearRatioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GearRatioViewController.swift; sourceTree = "<group>"; };
 		229053931CD68410002DEFF0 /* fracchart.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fracchart.csv; sourceTree = "<group>"; };
 		229053951CD693F7002DEFF0 /* tapchart.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tapchart.csv; sourceTree = "<group>"; };
 		229053971CD6959B002DEFF0 /* TapHoleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHoleTableViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				22B3C8661C7FF2230010D60D /* AppDelegate.swift */,
 				22B3C8681C7FF2230010D60D /* ViewController.swift */,
 				22B3C86A1C7FF2230010D60D /* Main.storyboard */,
+				2237375B1CD84BA000BA69B2 /* GearRatioViewController.swift */,
 				22B3C8981C7FF7E30010D60D /* FracViewController.swift */,
 				229053971CD6959B002DEFF0 /* TapHoleTableViewController.swift */,
 				22B3C8941C7FF2EF0010D60D /* MenuTableViewController.swift */,
@@ -280,6 +283,7 @@
 			files = (
 				229053981CD6959B002DEFF0 /* TapHoleTableViewController.swift in Sources */,
 				22B3C8691C7FF2230010D60D /* ViewController.swift in Sources */,
+				2237375C1CD84BA000BA69B2 /* GearRatioViewController.swift in Sources */,
 				22B3C8671C7FF2230010D60D /* AppDelegate.swift in Sources */,
 				22B3C8991C7FF7E30010D60D /* FracViewController.swift in Sources */,
 				22B3C8951C7FF2EF0010D60D /* MenuTableViewController.swift in Sources */,
