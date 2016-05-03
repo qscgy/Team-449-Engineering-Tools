@@ -63,16 +63,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gear Ratio Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jq-EX-Atf">
-                                                    <rect key="frame" x="22" y="8" width="226" height="29"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pneumatic Cylinder Force Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jq-EX-Atf">
+                                                    <rect key="frame" x="21" y="7" width="389" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6Jq-EX-Atf" firstAttribute="leading" secondItem="njf-nh-N0B" secondAttribute="leadingMargin" constant="13" id="HPr-rc-vkl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ZGV-uH-jNZ" kind="show" id="0vv-OK-AhW"/>
+                                            <segue destination="XrF-7y-h7U" kind="show" id="M4c-YF-ZX7"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -88,6 +91,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhq-Zj-yLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1017" y="398"/>
+        </scene>
+        <!--Pneum Force View Controller-->
+        <scene sceneID="0jr-Ma-Q8K">
+            <objects>
+                <viewController id="XrF-7y-h7U" customClass="PneumForceViewController" customModule="Team_449_Engineering_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o25-3B-v1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="NVV-9s-F3m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C7V-9F-avG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bore diameter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1E3-gh-DS8">
+                                <rect key="frame" x="40" y="101" width="131" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsu-EA-Mf2">
+                                <rect key="frame" x="40" y="154" width="89" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8D6-gb-lut">
+                                <rect key="frame" x="179" y="98" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPv-EL-dMS">
+                                <rect key="frame" x="179" y="151" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="in." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CZ-ST-QgI">
+                                <rect key="frame" x="284" y="101" width="18" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="psi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqd-nt-y4h">
+                                <rect key="frame" x="284" y="155" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zW-AK-mh1">
+                                <rect key="frame" x="40" y="252" width="61" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYG-rq-xhl">
+                                <rect key="frame" x="100" y="199" width="80" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateForce:" destination="XrF-7y-h7U" eventType="touchUpInside" id="X7b-Rd-u90"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nsu-EA-Mf2" firstAttribute="top" secondItem="1E3-gh-DS8" secondAttribute="bottom" constant="29" id="1dH-vV-yw4"/>
+                            <constraint firstItem="3CZ-ST-QgI" firstAttribute="leading" secondItem="8D6-gb-lut" secondAttribute="trailing" constant="8" id="3bU-EK-CSj"/>
+                            <constraint firstItem="dPv-EL-dMS" firstAttribute="centerY" secondItem="nsu-EA-Mf2" secondAttribute="centerY" id="6Q5-db-sFR"/>
+                            <constraint firstItem="dPv-EL-dMS" firstAttribute="top" secondItem="8D6-gb-lut" secondAttribute="bottom" constant="23" id="7qX-pB-kwh"/>
+                            <constraint firstItem="dPv-EL-dMS" firstAttribute="leading" secondItem="8D6-gb-lut" secondAttribute="leading" id="9mo-WW-VSW"/>
+                            <constraint firstItem="1E3-gh-DS8" firstAttribute="top" secondItem="o25-3B-v1w" secondAttribute="bottom" constant="37" id="FRf-7z-WhI"/>
+                            <constraint firstItem="8zW-AK-mh1" firstAttribute="leading" secondItem="nsu-EA-Mf2" secondAttribute="leading" id="OeC-x3-1Bm"/>
+                            <constraint firstItem="3CZ-ST-QgI" firstAttribute="centerY" secondItem="8D6-gb-lut" secondAttribute="centerY" id="Q7u-Ec-ImC"/>
+                            <constraint firstItem="nsu-EA-Mf2" firstAttribute="leading" secondItem="1E3-gh-DS8" secondAttribute="leading" id="QxG-tX-U2y"/>
+                            <constraint firstItem="mqd-nt-y4h" firstAttribute="centerY" secondItem="dPv-EL-dMS" secondAttribute="centerY" id="doN-99-anZ"/>
+                            <constraint firstItem="8zW-AK-mh1" firstAttribute="top" secondItem="nsu-EA-Mf2" secondAttribute="bottom" constant="74" id="f2c-zF-hrt"/>
+                            <constraint firstItem="8D6-gb-lut" firstAttribute="centerY" secondItem="1E3-gh-DS8" secondAttribute="centerY" id="mgR-mp-MCX"/>
+                            <constraint firstItem="8D6-gb-lut" firstAttribute="top" secondItem="o25-3B-v1w" secondAttribute="bottom" constant="34" id="sby-g0-NNZ"/>
+                            <constraint firstItem="nsu-EA-Mf2" firstAttribute="leading" secondItem="C7V-9F-avG" secondAttribute="leadingMargin" constant="20" id="wIB-ZO-ZsX"/>
+                            <constraint firstItem="mqd-nt-y4h" firstAttribute="leading" secondItem="3CZ-ST-QgI" secondAttribute="leading" id="yha-PA-s8s"/>
+                            <constraint firstItem="1E3-gh-DS8" firstAttribute="leading" secondItem="C7V-9F-avG" secondAttribute="leadingMargin" constant="20" id="yxI-os-Qq3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diameterField" destination="8D6-gb-lut" id="jnO-Y0-4yl"/>
+                        <outlet property="forceOutput" destination="8zW-AK-mh1" id="aXc-mE-gFJ"/>
+                        <outlet property="pressureField" destination="dPv-EL-dMS" id="Zue-S0-cra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7J-j8-I6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="-518"/>
         </scene>
         <!--Frac View Controller-->
         <scene sceneID="chh-mk-TW4">

@@ -37,7 +37,6 @@ class GearRatioViewController: UIViewController {
         let desiredCurrent=Double(desiredCurrentField.text!)
         let load=Double(loadField.text!)
         
-        var 
     }
 
     /*
