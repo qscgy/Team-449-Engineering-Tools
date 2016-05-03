@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		229053941CD68410002DEFF0 /* fracchart.csv in Resources */ = {isa = PBXBuildFile; fileRef = 229053931CD68410002DEFF0 /* fracchart.csv */; };
+		229053961CD693F7002DEFF0 /* tapchart.csv in Resources */ = {isa = PBXBuildFile; fileRef = 229053951CD693F7002DEFF0 /* tapchart.csv */; };
+		229053981CD6959B002DEFF0 /* TapHoleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229053971CD6959B002DEFF0 /* TapHoleTableViewController.swift */; };
 		22B3C8671C7FF2230010D60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3C8661C7FF2230010D60D /* AppDelegate.swift */; };
 		22B3C8691C7FF2230010D60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B3C8681C7FF2230010D60D /* ViewController.swift */; };
 		22B3C86C1C7FF2230010D60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B3C86A1C7FF2230010D60D /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		229053931CD68410002DEFF0 /* fracchart.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fracchart.csv; sourceTree = "<group>"; };
+		229053951CD693F7002DEFF0 /* tapchart.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tapchart.csv; sourceTree = "<group>"; };
+		229053971CD6959B002DEFF0 /* TapHoleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapHoleTableViewController.swift; sourceTree = "<group>"; };
 		22B3C8631C7FF2230010D60D /* Team 449 Engineering Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Team 449 Engineering Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B3C8661C7FF2230010D60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22B3C8681C7FF2230010D60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,11 +113,13 @@
 				22B3C8681C7FF2230010D60D /* ViewController.swift */,
 				22B3C86A1C7FF2230010D60D /* Main.storyboard */,
 				22B3C8981C7FF7E30010D60D /* FracViewController.swift */,
+				229053971CD6959B002DEFF0 /* TapHoleTableViewController.swift */,
 				22B3C8941C7FF2EF0010D60D /* MenuTableViewController.swift */,
 				22B3C86D1C7FF2230010D60D /* Assets.xcassets */,
 				22B3C86F1C7FF2230010D60D /* LaunchScreen.storyboard */,
 				22B3C8961C7FF73D0010D60D /* fracchart.txt */,
 				229053931CD68410002DEFF0 /* fracchart.csv */,
+				229053951CD693F7002DEFF0 /* tapchart.csv */,
 				22B3C8721C7FF2230010D60D /* Info.plist */,
 			);
 			path = "Team 449 Engineering Tools";
@@ -245,6 +251,7 @@
 				22B3C8711C7FF2230010D60D /* LaunchScreen.storyboard in Resources */,
 				229053941CD68410002DEFF0 /* fracchart.csv in Resources */,
 				22B3C8971C7FF73D0010D60D /* fracchart.txt in Resources */,
+				229053961CD693F7002DEFF0 /* tapchart.csv in Resources */,
 				22B3C86E1C7FF2230010D60D /* Assets.xcassets in Resources */,
 				22B3C86C1C7FF2230010D60D /* Main.storyboard in Resources */,
 			);
@@ -271,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229053981CD6959B002DEFF0 /* TapHoleTableViewController.swift in Sources */,
 				22B3C8691C7FF2230010D60D /* ViewController.swift in Sources */,
 				22B3C8671C7FF2230010D60D /* AppDelegate.swift in Sources */,
 				22B3C8991C7FF7E30010D60D /* FracViewController.swift in Sources */,
